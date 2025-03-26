@@ -98,11 +98,6 @@ qemu-user-static:
     setup:
       - "-- -r"
       - "-s -- -p"
-  almalinux9-ppc64le:
-    image: aptman/qus:d6.1 # required for POWER 9 support used in image
-    setup:
-      - "-- -r"
-      - "-s -- -p"
 
 # mapping of distro architecture => docker platform
 matrix-platforms:
